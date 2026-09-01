@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Heaven Furniture Mart</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "on-primary-container": "#71716d",
+                      "on-primary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "on-tertiary-fixed": "#301400",
+                      "primary-container": "#f9f7f2",
+                      "primary-fixed": "#e4e2dd",
+                      "surface": "#f9f9f9",
+                      "error-container": "#ffdad6",
+                      "secondary-container": "#e2dfde",
+                      "on-secondary-fixed-variant": "#474746",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "tertiary-container": "#fff5f0",
+                      "on-surface": "#1a1c1c",
+                      "tertiary": "#805533",
+                      "secondary-fixed": "#e5e2e1",
+                      "inverse-primary": "#c8c6c2",
+                      "error": "#ba1a1a",
+                      "secondary": "#5f5e5e",
+                      "surface-bright": "#f9f9f9",
+                      "surface-container": "#eeeeee",
+                      "surface-variant": "#e2e2e2",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "surface-container-high": "#e8e8e8",
+                      "outline-variant": "#c7c7bf",
+                      "tertiary-fixed-dim": "#f4bb92",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "inverse-surface": "#2f3131",
+                      "surface-container-highest": "#e2e2e2",
+                      "background": "#f9f9f9",
+                      "on-primary-fixed": "#1b1c19",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#474744",
+                      "outline": "#777871",
+                      "primary-fixed-dim": "#c8c6c2",
+                      "on-tertiary-container": "#956744",
+                      "on-background": "#1a1c1c",
+                      "surface-container-low": "#f4f3f3",
+                      "tertiary-fixed": "#ffdcc5",
+                      "surface-tint": "#5e5e5b",
+                      "on-surface-variant": "#464742",
+                      "surface-dim": "#dadada",
+                      "on-tertiary-fixed-variant": "#653d1e",
+                      "inverse-on-surface": "#f1f1f1",
+                      "on-secondary-container": "#636262",
+                      "primary": "#5e5e5b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1440px",
+                      "margin-desktop": "80px",
+                      "unit": "8px",
+                      "section-gap": "120px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-xl": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "button-serif": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "button-serif": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .minimalist-scrollbar::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+        .minimalist-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .minimalist-scrollbar::-webkit-scrollbar-thumb {
+            background: #c7c7bf;
+            border-radius: 4px;
+        }
+      </style>
+</head>
+<body class="bg-primary-container text-on-surface font-body-md antialiased overflow-x-hidden pt-20">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface-container-lowest text-on-surface dark:text-on-surface font-display-lg text-display-lg-mobile md:text-display-lg fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline-variant flat no shadows">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop w-full">
+<button class="text-secondary hover:text-on-surface transition-colors cursor-pointer active:opacity-70 hover:bg-primary-container/50 transition-all duration-300 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-display-lg text-headline-lg md:text-headline-xl tracking-tighter text-on-surface dark:text-on-surface">HEAVEN FURNITURE</h1>
+<button class="text-secondary hover:text-on-surface transition-colors cursor-pointer active:opacity-70 hover:bg-primary-container/50 transition-all duration-300 p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</header>
+<!-- Navigation Drawer (Hidden by default, structure provided based on JSON) -->
+<div class="fixed inset-y-0 left-0 z-[60] bg-surface dark:bg-surface-container text-on-surface dark:text-on-surface font-label-caps text-label-caps h-full w-80 border-r border-outline-variant shadow-sm flex flex-col h-full py-8 transition-transform duration-300 ease-in-out -translate-x-full" id="nav-drawer">
+<div class="px-6 mb-8 flex justify-between items-center">
+<h2 class="font-display-lg text-headline-lg">Collections</h2>
+<button class="p-2 -mr-2 text-secondary hover:text-on-surface" id="close-drawer">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex-1 overflow-y-auto minimalist-scrollbar">
+<ul class="flex flex-col space-y-2 px-4">
+<li>
+<a class="flex items-center space-x-4 px-4 py-3 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-transform duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="chair">chair</span>
+<span>Living Room</span>
+</a>
+</li>
+<li>
+<a class="flex items-center space-x-4 px-4 py-3 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-transform duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="bed">bed</span>
+<span>Bedroom</span>
+</a>
+</li>
+<li>
+<a class="flex items-center space-x-4 px-4 py-3 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-transform duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="table_restaurant">table_restaurant</span>
+<span>Dining</span>
+</a>
+</li>
+<li>
+<a class="flex items-center space-x-4 px-4 py-3 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-transform duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="desk">desk</span>
+<span>Office</span>
+</a>
+</li>
+<li>
+<a class="flex items-center space-x-4 px-4 py-3 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-transform duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="inventory_2">inventory_2</span>
+<span>Storage</span>
+</a>
+</li>
+<li>
+<a class="flex items-center space-x-4 px-4 py-3 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-transform duration-300 ease-in-out" href="#">
+<span class="material-symbols-outlined" data-icon="filter_vintage">filter_vintage</span>
+<span>Decor</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<!-- Overlay for drawer -->
+<div class="fixed inset-0 bg-on-surface/20 z-[55] hidden opacity-0 transition-opacity duration-300" id="drawer-overlay"></div>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[85vh] min-h-[600px] flex items-end pb-16 px-margin-mobile">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover rounded-b-[24px]" data-alt="A meticulously designed modern living room bathed in warm, soft sunlight streaming through large windows. The focal point is a plush, cream-colored modular sofa adorned with textured linen throws and minimalist charcoal cushions. A solid walnut coffee table sits on a muted, hand-woven jute rug. The aesthetic is 'Modern Bengali Heritage'—quiet luxury, elegant, inviting, and uncluttered, with a light ivory overall tone and subtle earthy accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChlIzAIL9AiRt7hdFms1fsoTBg7X8wUD_YTJCN7Jnnz58x6m7zpF4hPYXbV9oz0dC8TSJcggBmL1VX19LtGjd7uWNfs0eBe17svAcdjan3Vha_B66g3Syy_o5-fg-8Er7Le9TKVlipzGPFPJiwiRZQ-Cdw9mgjNeu3xtnHr3iOm5nK0TtOySPrEM7tT4G4Cciscv8GoM1Jjzb0uKdRaN58NEjbYPL_S_SM27-KR69v3GKK0gJuLxlzPg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-on-surface/20 to-transparent rounded-b-[24px]"></div>
+</div>
+<div class="relative z-10 w-full text-on-primary max-w-container-max mx-auto">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-4 max-w-2xl text-balance">Make Space for What Matters.</h2>
+<p class="font-body-md md:font-body-lg text-body-md md:text-body-lg mb-8 max-w-md opacity-90">Thoughtfully designed furniture for living rooms, bedrooms and dining spaces — made to turn everyday moments into something special.</p>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<button class="bg-on-surface text-on-primary font-button-serif text-button-serif py-4 px-8 rounded flex-1 sm:flex-none text-center hover:opacity-90 transition-opacity">Explore Collection</button>
+<button class="border border-on-primary text-on-primary font-button-serif text-button-serif py-4 px-8 rounded flex-1 sm:flex-none text-center italic hover:bg-on-primary/10 transition-colors">Visit Showroom</button>
+</div>
+</div>
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-on-primary/60 flex flex-col items-center animate-bounce">
+<span class="text-xs uppercase tracking-widest mb-1">Scroll</span>
+<span class="material-symbols-outlined text-sm">arrow_downward</span>
+</div>
+</section>
+<!-- Trust Strip -->
+<section class="w-full border-b border-outline-variant/30 py-6 px-margin-mobile">
+<div class="max-w-container-max mx-auto">
+<ul class="flex overflow-x-auto gap-8 minimalist-scrollbar pb-2 snap-x text-secondary items-center justify-between min-w-max md:min-w-0">
+<li class="flex items-center gap-2 snap-center">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'wght' 200;">diamond</span>
+<span class="font-label-caps text-label-caps whitespace-nowrap">Premium Materials</span>
+</li>
+<li class="flex items-center gap-2 snap-center">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'wght' 200;">architecture</span>
+<span class="font-label-caps text-label-caps whitespace-nowrap">Modern Designs</span>
+</li>
+<li class="flex items-center gap-2 snap-center">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'wght' 200;">verified</span>
+<span class="font-label-caps text-label-caps whitespace-nowrap">Trusted Quality</span>
+</li>
+<li class="flex items-center gap-2 snap-center">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'wght' 200;">storefront</span>
+<span class="font-label-caps text-label-caps whitespace-nowrap">Showroom Experience</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Category Discovery -->
+<section class="py-[64px] md:py-section-gap px-margin-mobile max-w-container-max mx-auto">
+<div class="mb-12 text-center md:text-left">
+<h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl mb-4">Find Your Way Home.</h2>
+<p class="font-body-md text-secondary">Explore furniture designed for every room.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Living Room -->
+<a class="group block relative aspect-[4/5] rounded-[24px] overflow-hidden bg-surface-container" href="#">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist and inviting living room corner featuring a sleek, low-profile teak wood lounge chair with deep charcoal upholstery. The chair sits on a textured natural fiber rug against a warm ivory wall. Soft, diffused lighting creates a serene, high-end editorial atmosphere, highlighting the craftsmanship of the wood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhPCSLhYsfHbjprX-30YrKo1_QOFZPXqdP64Vfl_owNGzYhyA27dXdC8DzThabUp4kPLT1ypo0wgE0ytnSvx2VooTfMWSmNZmA0Srru1kKPQArOGPdwEFG4kmmEP-7a2TDsb6KabbhIY2k8t5VkIpifFWac664Y3yEXn9TUwVZobUB2QZ8MSlk6RoPQ4W4tNsMCM5QzkEXapUqx-1mTdXLeNzvUvdzvkEP9Gbn-QoUMeSKOizQc8WHAw"/>
+<div class="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/50 transition-colors duration-300"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-center items-center text-center">
+<h3 class="font-display-lg text-display-lg-mobile text-on-primary mb-6">Living Room</h3>
+<span class="inline-flex items-center justify-center w-12 h-12 rounded-full border border-on-primary/50 text-on-primary group-hover:bg-on-primary group-hover:text-on-surface transition-all duration-300">
+<span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Bedroom -->
+<a class="group block relative aspect-[4/5] rounded-[24px] overflow-hidden bg-surface-container" href="#">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A tranquil, luxurious modern bedroom setting. A low platform bed crafted from solid rich mahogany takes center stage, dressed in crisp white organic cotton linens and a heavily textured, earthy clay-toned throw blanket. The lighting is soft and moody, evoking a sense of calm sanctuary indicative of Modern Bengali Heritage aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAY76WBuVjCfMUJ2F6y_tGp14sYxDG6DvXFWRmLg8wHKNkfCofrUypNbTR6S1wqknhBCBRx9G4XHuLwZ_KMqSjndQ2tNOkLQ_VZFJeMWquIFJZ_M6OE0pS1HyL9rxHgtK3MpkUn12M0v2S_C7ZXWAHExARyBHK_dJuNyw_gVMclhu4W8BCQb2jH3ztXwoxAFMH4e6dT8H9osai6GjUpnhVWbykRlL8wUK5KXD6PStDOWttIbM7BjUzKw"/>
+<div class="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/50 transition-colors duration-300"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-center items-center text-center">
+<h3 class="font-display-lg text-display-lg-mobile text-on-primary mb-6">Bedroom</h3>
+<span class="inline-flex items-center justify-center w-12 h-12 rounded-full border border-on-primary/50 text-on-primary group-hover:bg-on-primary group-hover:text-on-surface transition-all duration-300">
+<span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Dining -->
+<a class="group block relative aspect-[4/5] rounded-[24px] overflow-hidden bg-surface-container" href="#">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An elegant modern dining space featuring a solid oak dining table with a smooth, matte finish. Around it are beautifully crafted chairs with woven cane backs and subtle ivory cushions. The setting is bathed in natural daylight, casting soft shadows. The mood is refined, minimalist, and deeply rooted in quality craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmvi54TrI74vSJrz1d06UJD7cDElHaTP403fhptFjC0DC4NSk5Bdj0PJcSHodyjA7G8tgsrEKjyElbz_hpjuO0OzXgwbu4V0XEJ500RB-FyuJvxnNzYXmm87xxriQo1C7kiIc5L75u8uJpYBLZp9FEBCytlBiOxq3_sNp9IgJYj-V2BRlzbuSJ33XwPF6Zd9ALX-uQrRhzaCAcaje7yiJtF2H2VDEGAG2R3ZNPuSE7eQ2ANFEEFCHqZA"/>
+<div class="absolute inset-0 bg-on-surface/40 group-hover:bg-on-surface/50 transition-colors duration-300"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-center items-center text-center">
+<h3 class="font-display-lg text-display-lg-mobile text-on-primary mb-6">Dining</h3>
+<span class="inline-flex items-center justify-center w-12 h-12 rounded-full border border-on-primary/50 text-on-primary group-hover:bg-on-primary group-hover:text-on-surface transition-all duration-300">
+<span class="material-symbols-outlined">arrow_forward</span>
+</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Product Spotlight -->
+<section class="py-[64px] md:py-section-gap px-margin-mobile max-w-container-max mx-auto border-t border-outline-variant/30">
+<div class="flex flex-col gap-8 md:flex-row md:items-center">
+<div class="w-full md:w-1/2 aspect-square md:aspect-auto md:h-[600px] rounded-[24px] overflow-hidden bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="A striking close-up of a meticulously crafted mid-century modern armchair. The frame is made of polished dark walnut with elegant, sweeping curves. The seat and back are upholstered in a premium, textured charcoal bouclé fabric. The chair is placed against a stark, warm ivory background, highlighting its architectural lines and conveying a sense of 'quiet luxury'." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrenS56KhLOnBOiNca9DzaheSmKkwYve0frSgf83nzxnrzr9vlmWiTRkAo81lff2cKLzhJ9PO0a99qP8kpsNaftzM1OnzLkrQpfmZqDmkzeEsyB7LSlqqM9VLSRM1fAzsIe-N2TCfTv2x6Im4Qkaivyl2gr8C3VQsdaV3IZsWEgd02FHvlkffE4wt1zUpAr03ggmzbX0_cjwBJiWOdH-hnZBb6FWaPS0CO2uYEsKWImyLS4zcZKWNqnQ"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-12">
+<span class="font-label-caps text-label-caps text-secondary mb-4 tracking-widest uppercase">Spotlight</span>
+<h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl mb-6">Designed Around Real Life.</h2>
+<p class="font-body-md text-secondary mb-8 max-w-lg leading-relaxed">
+                        We believe furniture should be as comfortable as it is beautiful. Our pieces are crafted using time-honored techniques and premium materials, ensuring they withstand the test of time while bringing a sense of calm sophistication to your daily rituals.
+                    </p>
+<div>
+<a class="inline-flex items-center gap-2 font-button-serif text-button-serif italic text-on-surface hover:text-secondary transition-colors group" href="#">
+                            Explore the Collection
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Showroom Experience -->
+<section class="py-[64px] md:py-section-gap px-margin-mobile">
+<div class="max-w-container-max mx-auto bg-surface dark:bg-surface-container rounded-[24px] overflow-hidden border border-outline-variant flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 h-[400px] md:h-auto relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="The interior of a high-end furniture showroom. The space is expansive and gallery-like, with warm ivory walls and polished concrete floors. Beautifully curated furniture vignettes are softly illuminated by directional gallery lighting. The atmosphere is quiet, exclusive, and editorial, showcasing pieces as works of art within a serene environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLydPKKmZBu2JuPN2RsLWqOU6wxS11j6_5UDU3bytFbAihlCoHatc9ZORwhajwjWIjD4e1NwBdwndw0ESY3GYHX63JkVVFMcsv79H_ZEQ_XQ4QeCq_r4klAh4DZdm1ensm5TQUTRT1IaNIAR19Sxtah_bWH1IORQUeYC0c-H_ca7za1S-gLNP0KgPAni4Cc3FQ3dX53P_cak7eXZBQ4rNHe-DdpgxwH5VPreksl8uMNyh52SFZxXvH5A"/>
+</div>
+<div class="w-full md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+<h2 class="font-headline-lg md:font-headline-xl text-headline-lg md:text-headline-xl mb-6">See It. Feel It.<br/>Make It Yours.</h2>
+<div class="space-y-6 mb-10">
+<div class="flex items-start gap-4 text-secondary">
+<span class="material-symbols-outlined mt-1">location_on</span>
+<div>
+<p class="font-body-md text-on-surface">Flagship Studio</p>
+<p class="font-body-md text-sm">123 Heritage Lane, Design District</p>
+</div>
+</div>
+<div class="flex items-start gap-4 text-secondary">
+<span class="material-symbols-outlined mt-1">schedule</span>
+<div>
+<p class="font-body-md text-sm">Tue - Sun: 10:00 AM - 7:00 PM</p>
+<p class="font-body-md text-sm">Mon: Closed for Restocking</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-on-surface text-on-primary font-button-serif text-button-serif py-3 px-6 rounded text-center hover:opacity-90 transition-opacity flex-1">Get Directions</button>
+<button class="border border-outline text-on-surface font-button-serif text-button-serif py-3 px-6 rounded text-center hover:bg-surface-container transition-colors flex-1 flex items-center justify-center gap-2">
+                            Chat on WhatsApp
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-[80px] md:py-[120px] px-margin-mobile bg-on-surface text-on-primary text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8 text-balance">Your Home Deserves Better.</h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-on-primary text-on-surface font-button-serif text-button-serif py-4 px-8 rounded text-center hover:bg-primary-container transition-colors">Explore Collection</button>
+<button class="border border-on-primary text-on-primary font-button-serif text-button-serif py-4 px-8 rounded text-center italic hover:bg-on-primary/10 transition-colors">Visit Showroom</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-surface-container-lowest text-on-primary-container dark:text-on-surface font-body-md text-body-md relative w-full mt-section-gap border-t border-outline-variant flat no shadows cursor-pointer">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto">
+<div class="flex flex-col space-y-4">
+<span class="font-display-lg text-headline-lg text-on-surface">HEAVEN FURNITURE</span>
+<p class="text-secondary text-sm max-w-xs mt-2">Crafting modern heritage pieces for the contemporary home, prioritizing quiet luxury and enduring quality.</p>
+</div>
+<div class="flex flex-col space-y-4 mt-8 md:mt-0">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-2 uppercase tracking-widest">Connect</h4>
+<a class="text-secondary hover:text-on-surface transition-colors" href="#">Showroom Locations</a>
+<a class="text-secondary hover:text-on-surface transition-colors" href="#">WhatsApp Concierge</a>
+</div>
+<div class="flex flex-col space-y-4 mt-8 md:mt-0">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-2 uppercase tracking-widest">About</h4>
+<a class="text-secondary hover:text-on-surface transition-colors" href="#">Our Story</a>
+<a class="text-secondary hover:text-on-surface transition-colors" href="#">Shipping &amp; Returns</a>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 px-margin-mobile md:px-margin-desktop py-6 text-center text-sm text-secondary flex justify-center w-full">
+<div class="max-w-container-max w-full">
+                © 2024 Heaven Furniture Mart. Crafting Modern Heritage.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple Navigation Drawer Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.querySelector('header button:first-child');
+            const drawer = document.getElementById('nav-drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            const closeBtn = document.getElementById('close-drawer');
+
+            function openDrawer() {
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeDrawer() {
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => overlay.classList.add('hidden'), 300);
+                document.body.style.overflow = '';
+            }
+
+            menuBtn.addEventListener('click', openDrawer);
+            closeBtn.addEventListener('click', closeDrawer);
+            overlay.addEventListener('click', closeDrawer);
+        });
+    </script>
+</body></html>
